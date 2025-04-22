@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Thiết lập mã hóa ký tự UTF-8 để hỗ trợ tiếng Việt -->
+    <meta charset="UTF-8">
+    <!-- Đảm bảo giao diện hiển thị tốt trên các thiết bị di động -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tiêu đề của trang web -->
+    <title>To-Do List</title>
+    <!-- Liên kết đến file CSS để định dạng giao diện -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tiêu đề chính của ứng dụng -->
+    <h1>Danh Sách Công Việc</h1>
+    
+    <!-- Container chứa ô nhập liệu và nút thêm công việc -->
+    <div class="input-container">
+        <!-- Ô nhập liệu để người dùng nhập công việc mới -->
+        <input type="text" id="taskInput" placeholder="Nhập công việc...">
+        <!-- Nút để thêm công việc, gọi hàm addTask() khi được nhấn -->
+        <button onclick="addTask()">Thêm</button>
+    </div>
+    
+    <!-- Container để hiển thị danh sách các công việc -->
+    <div id="taskList"></div>
+
+    <!-- Liên kết đến file JavaScript chứa logic của ứng dụng -->
+    <script src="script.js"></script>
+</body>
+</html>
